@@ -12,7 +12,7 @@ int solution(int N) {
     int loop(ceil(log2(N)));
     
     for(int i=0; i < loop ; i++){
-        if((N ^ base) != N){cout<<"hi"<<N<<endl;
+        if((N & base) == 1){
             if(start_count == 1){
                 start_count=0;
                 if(binarygap > max_binarygap){
@@ -29,7 +29,7 @@ int solution(int N) {
                 binarygap=binarygap+1;
                 }
             }    
-        N = N >> 1;cout<<"shifted N is "<<N<<endl;
+        N = N >> 1;
         }
     
     
