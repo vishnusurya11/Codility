@@ -17,7 +17,7 @@ int solution(int X, vector<int> &A) {
         if(check_river[A[i]] == false){
             check_river[A[i]] = true;
             count=count+1;
-        if(count == X){
+        if(count == X){  //that means all the spots from 0 to X are filled
             return i;
         }
         }
